@@ -54,6 +54,7 @@ window.onload = function(){
 	};
 
 	txt.onfocus = function(){
+		state.style.display = 'block';
 		setAp (100)
 	};
 
@@ -65,6 +66,7 @@ window.onload = function(){
     	var timer = null;//放在函数里面会导致数据错误
 
 	function setAp (utarget){
+
 		clearInterval(timer);
 
 		timer = setInterval(function(){
@@ -80,6 +82,7 @@ window.onload = function(){
 			};
 			state.style.filter = 'alpha(opacity:'+alpha+')';
 			state.style.opacity = parseInt(alpha)/100;
+			if (state.style.opacity==0) {state.style.display = 'none'};
 		},30);
 	};
 	console.log('shaw@xwlong.com')
