@@ -3,6 +3,16 @@ html,body,ul,li,h1,h2,h3,h4,h5,h6,p{padding:0;margin:0;}
 body{margin:0;padding:0;background-color:#f6f6f6;height:1100px;font-family:Georgia, sans-serif ,"Open Sans","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Verdana,Tahoma,sans-serif;}
 input,textarea,button{outline:none;}
 input[type^="text"]:focus,textarea:focus {background:#eee; border-color:#999;}
+/*自适应代码*/
+@media screen and (max-width:600px){
+	.nav li{margin:0 8px!important;padding:15px 0;}
+	.txt{margin:10 0px!important;padding:8px 5px!important;border-radius:2px;border:1px solid #000;width:200px!important;}
+}
+@media screen and (max-width:470px){
+	.state{position:absolute;bottom:64px;left:50%;margin-left:-180px!important;opacity:0;filter:alpha(opacity:0);display:none;}
+	.txt{margin:10 0px!important;padding:8px 5px!important;border-radius:2px;border:1px solid #000;width:130px!important;}
+	.but{margin:6px!important;padding:6px 5px!important;border-radius:2px;color:#fff;box-shadow:1px 1px 10px rgba(0,0,0,0.1);display:line-block;margin-bottom:0;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;background-image:none;border:1px solid transparent;}
+}
 .fl{float:left;}
 .fr{float:right;}
 .clearfix{zoom:1;}
@@ -22,10 +32,12 @@ input[type^="text"]:focus,textarea:focus {background:#eee; border-color:#999;}
 .arrow{position:absolute;border:11px solid #999;border-color:#999 transparent transparent transparent; width:0;height:0;display:inline-block;top:100%;left:50%;margin-left:-11px;}
 .arrow:after{content:"";border-width:11px;box-sizing:border-box;display:inline-block;position:absolute;border:11px solid #fff;border-color:#fff transparent transparent transparent;top:50%;left:-10px;margin-top:-11px;}
 .form{margin:0 auto;max-width:600px;height:54px;padding-top:186px;}
-.txt{margin:10px;padding:8px 12px;border-radius:2px;border:1px solid #000;min-width:300px;}
+.txt{margin:10px;padding:8px 12px;border-radius:2px;border:1px solid #000;width:300px;}
 .but{margin:10px;padding:8px 12px;border-radius:2px;color:#fff;box-shadow:1px 1px 10px rgba(0,0,0,0.1);display:line-block;margin-bottom:0;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;background-image:none;border:1px solid transparent;}
 .tmBut{background-color:#c40000;border-color:#c40000;}
 .oBut{background-color:#5cb85c;border-color:#5cb85c;}
 .ul{margin:0 auto;max-width:600px;padding-top:50px;}
 .ul li{margin:20px;}
-.ul li a{text-decoration:none;color:rgba(0,0,0,0.6);}
+.ul li a,.coo span a{text-decoration:none;color:rgba(0,0,0,0.6);}
+.coo{border:1px solid #ccc;border-radius:5px;width:1160px;padding:20px;margin:0 auto;}
+.coo span{margin:auto 10px;}
